@@ -162,3 +162,52 @@ footer a i{
     font-size: 40px;
     padding: 50px 50px;
 }
+@media only screen and (max-width:700px){
+
+    .section{
+        padding-left: 50%;
+    }
+
+    #profile_img{
+        display: none;
+    }
+    .section_content{
+        display: none;
+        overflow: hidden;
+        position: relative;
+        padding: 0px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .article_portfolio{
+        margin: 0px;
+    }
+    .article_portfolio h1{
+        font-size: 30px;
+        margin: 50%;
+        padding: 10px;
+        margin-bottom: 50px;
+        width: fit-content;
+    }
+    .extras{
+        width: fit-content;
+        margin: 100px 0px 100px 0px;
+        padding: 0px;
+        display: flex;
+    }
+    .extras h2{
+        border-bottom: none;
+        font-size: 40px;
+        margin: 0px 50px 0px 0px;
+    }
+    footer{
+        background-color: #00000096;
+        padding: 50%;
+        width: max-content;
+        display: flex;
+    }
+    footer h3{
+       display: none;
+    }
+    
+}
