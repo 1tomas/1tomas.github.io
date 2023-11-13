@@ -1,59 +1,79 @@
 
 *{
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: "Victor Mono",monospace;
     box-sizing: border-box;
     margin: 0;
 }
 a, h1, h2, h3, p, li{
     text-decoration: none;
     color:#f5f5f5;
+
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+p, a, li{
+    font-size: 20px;
 }
 body{
     position: relative;
-    padding: 70px 5px 0px 5px;  /*ajistar el bodi para el contenido a los cosatados*/
     background-image: url(imgs/fondo.png);
 }
+/*-------------------------------------------------------------------------------------------------------------*/
 .header{
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
 }
-
 .nav_bar{
-    background-color:#000000;
-    border-bottom: 4px solid  #ff3c3c;
+    margin-top: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+#logo{
+    width: 250px;
+}
 .nav_menu{
-    font-size: 25px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     display: flex;
     list-style: none;
-    position: static;
     padding: 0;
-    margin: 10px 10px 10px 0px;
     width: 50%;
 }
-.nav_menu li a:hover{
-    background: linear-gradient(#ff3c3c,#e97caf,#e272be);
-    -webkit-background-clip: text;
-    color: transparent;  
-    transition: 1s;
-}
+.nav_menu  li a {
+    position: relative;
+  }
+.nav_menu  li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #f8887e;
+    height: 2px;
+  }
+  .nav_menu  li a:hover:after {
+    width: 100%;
+    transition: all 1.5s;
+    }
 
+/*-------------------------------------------------------------------------------------------------------------*/
 .section{
-    margin: 80px 0px;
+    margin: 80px 0px 0px 0px;
     display: flex;
     justify-content: space-around;
-    
+    align-items: center;
+    background-color: #00000096;
 }
-
 .section_information h1{
-    padding: 20px 0px;
-    font-size: 50px;
+    padding: 10px 0px;
 }
 .span_name{
     background: linear-gradient(#ff3c3c,#f8887e,#fe5645);
@@ -61,52 +81,31 @@ body{
     color: transparent;  
     font-weight: bold;
 }
-.section_content{
-    display: none;
-    overflow: hidden;
-    position: absolute;
-    padding: 20px 500px 0px 0px;
-    font-weight: bold;
+.section_information{
+    padding: 30px;
+}
+.section_list{
+    padding: 15px;
     font-size: 20px;
 }
-
-.collapsible {
-    background-color: #00000096;
-    color: white; 
-    border: 2px solid #f8887e;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    transition: 1s;
-}
-
-.collapsible:hover {
-    background-color: #ff3c3c;
-    color: white;
-}
 .circular--landscape {
-    width: 300px;
+    width: 500px;
     height: 440px;
     overflow: hidden;
-    border-radius: 50%;
-    border: 4px solid #f8887e;
-  }
-
+    border-radius: 100%;
+    border: 2px solid #f8887e;
+}
 #profile_img{
     width: 100%;
 }
-.article_portfolio{
 
-    margin: 200px 0px;
+/*-------------------------------------------------------------------------------------------------------------*/
+.article_portfolio{
+    margin: 80px 0px;
 }
 .article_portfolio h1{
     background-color: #00000096;
     border-bottom: 4px solid  #f8887e;
-    font-size: 40px;
     margin: auto;
     padding: 10px;
     margin-bottom: 50px;
@@ -120,7 +119,6 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
 .portfiolio_section_colum{
     padding: 0px 0px 50px 0px;
     width: fit-content;
@@ -137,12 +135,16 @@ body{
     padding: 20px 0;
     font-size: 60px;
 }
-
-.portfiolio_section_colum:hover{
-    background-color: #ff3c3c;
+.portfiolio_section_colum i:hover{
+    width: fit-content;
+    color: #ff3c3c;
     transition: 1s;
 }
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
 .extras{
+    
     background-color: #00000096;
     width: fit-content;
     margin: auto;
@@ -150,10 +152,12 @@ body{
     padding: 40px 40px 40px 40px;
 }
 .extras h2{
-    border-bottom: 4px solid  #f8887e;
-    font-size: 40px;
-    margin: 0px 0px 50px 0px;
+    width: fit-content;
+    border-bottom: 4px solid #f8887e;
+    margin: 0px auto 50px auto; /* changed from margin: 0px 0px 50px 0px; */
+    text-align: center; /* added */
 }
+/*-------------------------------------------------------------------------------------------------------------*/
 footer{
     background-color: #00000096;
     margin: auto;
@@ -169,52 +173,52 @@ footer a i{
     font-size: 40px;
     padding: 50px 50px;
 }
-@media only screen and (max-width:700px){
 
-    .section{
-        padding-left: 50%;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 20px;
     }
 
-    #profile_img{
-        display: none;
+    .switch input {
+    display: none;
     }
-    .section_content{
-        display: none;
-        overflow: hidden;
-        position: relative;
-        padding: 0px;
-        font-weight: bold;
-        font-size: 20px;
+
+    .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color:#f5f5f5;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width: fit-content;
+    font-size: 20px;
     }
-    .article_portfolio{
-        margin: 0px;
+
+    .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 35px;
+    left: 0px;
+    padding: 1px;
+    border: #f8887e 1px solid;
+    -webkit-transition: .4s;
+    transition: .4s;
     }
-    .article_portfolio h1{
-        font-size: 30px;
-        margin: 50%;
-        padding: 10px;
-        margin-bottom: 50px;
-        width: fit-content;
+
+
+
+    input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
     }
-    .extras{
-        width: fit-content;
-        margin: 100px 0px 100px 0px;
-        padding: 0px;
-        display: flex;
+
+    input:checked + .slider:before {
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
     }
-    .extras h2{
-        border-bottom: none;
-        font-size: 40px;
-        margin: 0px 50px 0px 0px;
-    }
-    footer{
-        background-color: #00000096;
-        padding: 50%;
-        width: max-content;
-        display: flex;
-    }
-    footer h3{
-       display: none;
-    }
-    
-}

@@ -11,37 +11,47 @@
     <header class="header">
         <nav class="nav_bar">
             <a href="index.html">
-            <img src="imgs/logo.png" alt="logo" id="logo">
+            <img src="imgs/white.png" alt="logo" id="logo">
             </a> 
-                 <ul class="nav_menu">
-                    <li ><a href="#">Sobre mi</a></li>
+                
+                <ul class="nav_menu">
                     <li ><a href="#portfolio">Portfolio</a></li>
                     <li ><a href="#contact">Contacto</a></li>
+                    <label class="switch">
+                        <input type="checkbox" id="togBtn">
+                        <div class="slider round">
+                            <span language='español' class="on">ESP</span>
+                            <span language='english' class="off">ENG</span>
+                        </div>
+                    </label>
+            
                 </ul>
             </nav>
     </header>
 
     <section class="section">
         <div class="section_information">
-            <h1>Hola! soy <span class="span_name">Tomas Caraccioli</span></h1>
-            <h2>Desarrollador web full stack</h2>
-            <button type="button" id="collapsible" class="collapsible">Sobre mi</button>
-            <div class="section_content">
+            <h1>Hola! soy <span class="span_name">Tomas Caraccioli.</span></h1>
+            <h2>Desarrollador web <span class="span_name">full stack.</span></h2>
                 <ul>
-                    <li>Edad: 20 años</li>
-                    <li>Estudios:
-                        <p>Primario y Secundario completo (Colegio Sagrado Corazón-General Juan Madariaga)</p>
-                        <p>Actualmente cursando Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas -TUDAI- (UNICEN-Tandil)</p>
+                    <div class="section_list">
+                    <li>Edad: 21 años.</li>
+                    <li>Datos de interes:
+                        <p>-Nivel de Ingles B1 (Intermedio).</p>
+                        <p>-Bueno trabajando en equipo.</p>
+                        <p>-Disponibilidad horaria.</p>
+                        <p>-Conocimiento en funciones, métodos, control de flujo, entrada/salida de datos, variables, tipos de datos, orientación a objetos, sintaxis y estructuras de control.</p>
                     </li>
-                    <li>Nivel de Ingles: Preliminary (PET)</li>
+                    <li>Estudios:
+                        <p>Primario y Secundario completo (Colegio Sagrado Corazón - General Juan Madariaga).</p>
+                        <p>Actualmente cursando 2do año de Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas -TUDAI- (UNICEN-Tandil).</p>
+                    </li>
+                    </div>
                 </ul>
-                <p>Busco desarrollar mis conocimientos y adquirir nuevos, soy bueno trabajando en equipo.</p>
-            </div>
         </div>
         <div class="circular--landscape">
             <img src="imgs/perfil.jpeg" alt="foto" id="profile_img">  
         </div>
-        
     </section>
    
     <span id="portfolio"></span>
@@ -55,9 +65,8 @@
             </div>
             <div class="portfiolio_section_colum">
                 <img src="imgs/php.png" alt="PHP">
-                <h3>php</h3>    
-                <a href="https://github.com/1tomas/PHP-API-proyect" target="blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://github.com/1tomas/PHP-proyect" target="blank"><i class="fa-brands fa-github"></i></a>
+                <h3>PHP</h3>    
+                <a href="https://github.com/1tomas/PHP-proyects" target="blank"><i class="fa-brands fa-github"></i></a>
             </div>
             
             <div class="portfiolio_section_colum">
@@ -72,13 +81,16 @@
             </div>
            
         </section>
+
         <div class="extras">
         <h2>Conocimientos varios</h2>
             <img src="imgs/git.png" alt="git">
             <img src="imgs/mysql.png" alt="mysql">
             <img src="imgs/boostrap.png" alt="boostrap">
             <img src="imgs/xamp.png" alt="xamp">
+           
         </div>
+
     </article>
 
 
