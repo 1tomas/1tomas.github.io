@@ -1,14 +1,24 @@
-let coll = document.getElementsByClassName("collapsible");
-let i;
+document.addEventListener('DOMContentLoaded', function () {
+    let checkbox = document.querySelector('input[type="checkbox"]');
+    let currentLanguage = localStorage.getItem('language');
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+
+    if (currentLanguage === 'english') {
+        checkbox.checked = true;
     } else {
-      content.style.display = "block";
+        checkbox.checked = false;
     }
-  });
-}
+
+    checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+
+            window.location.href = "ingles.html";
+            localStorage.setItem('language', 'english');
+        } else {
+
+            window.location.href = "index.html";
+            localStorage.setItem('language', 'spanish');
+        }
+    });
+});
+
