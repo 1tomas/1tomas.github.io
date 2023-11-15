@@ -222,3 +222,88 @@ footer a i{
     -ms-transform: translateX(40px);
     transform: translateX(40px);
     }
+    .nav_toggle {
+        display: none;
+    }
+
+
+    @media only screen and (max-width: 500px) {
+        body {
+            padding: 0px 10px 0px 10px; /* Adjust the body for content on the sides */
+            position: relative;
+        }
+        .nav_bar{
+            display: none;
+        }
+        .section{
+            width: 100%;
+            margin: none;
+            display: block;
+            justify-content: none;
+            align-items: none;
+            background-color: #00000096;
+        }
+
+        .section_information h1{
+            padding: none;
+        }
+
+        .section_information{
+            padding: none;
+        }
+        .section_list{
+            padding: none;
+            font-size: 20px;
+        }
+        .circular--landscape {
+            display: none;
+        }
+        #profile_img{
+            display: none;
+        }
+
+
+        .article_portfolio{
+            margin: none;
+        }
+
+        .article_portfolio img{
+            max-width: 50px;
+            min-height: 50px;
+        }
+        .portfiolio_section_colums{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .portfiolio_section_colum{
+            padding: 0px 0px 5px 0px;
+            width: 300px;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #f8887e;
+            background-color: #00000096;
+        }
+
+        footer{
+            background-color: #00000096;
+            margin: none;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer h3{
+                margin: none;
+                width: none;
+                padding-bottom: none;
+        
+        }
+        footer a i{
+            font-size: 30px;
+            padding: 20px 20px;
+        }
+    }
