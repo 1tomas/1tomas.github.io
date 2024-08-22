@@ -77,7 +77,7 @@ body{
 }
 .span_name{
     background: linear-gradient(#ff3c3c,#f8887e,#fe5645);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;  
     font-weight: bold;
 }
@@ -90,7 +90,7 @@ body{
 }
 .circular--landscape {
     width: 500px;
-    height: 440px;
+    height: 500px;
     overflow: hidden;
     border-radius: 100%;
     border: 2px solid #f8887e;
