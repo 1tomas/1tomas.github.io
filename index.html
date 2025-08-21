@@ -9,23 +9,24 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav_bar">
-            <a href="index.html">
+    <nav class="nav_bar">
+        <a href="index.html">
             <img src="imgs/white.png" alt="logo" id="logo">
-            </a>
-            
-                <ul class="nav_menu">
-                    <li ><a href="#portfolio">Portfolio</a></li>
-                    <li ><a href="#contact">Contacto</a></li>
-                    <label class="switch">
-                        <input type="checkbox" id="togBtn">
-                        <div class="slider round">
-                            <span language='español' class="on">ESP</span>
-                            <span language='english' class="off">ENG</span>
-                        </div>
-                    </label>
-                </ul>
-            </nav>
+        </a>
+        <ul class="nav_menu">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="nav_slider">
+            <label class="switch">
+                <input type="checkbox" id="togBtn">
+                <div class="slider">
+                    <span language='español' class="on">ESP</span>
+                    <span language='english' class="off">ENG</span>
+                </div>
+            </label>
+        </div>
+    </nav>
     </header>
 
     <section class="section">
@@ -80,7 +81,7 @@
             </div>
            
         </section>
-
+        
         <div class="extras">
         <h2>Conocimientos varios</h2>
             <img src="imgs/git.png" alt="git">
@@ -93,13 +94,15 @@
     </article>
 
 
-    <footer id="contact">
-       
-        <a href="mailto:tomascaracholi@gmail.com"><i class="fa-sharp fa-solid fa-envelopes-bulk"></i></a>
-        <a href="https://www.instagram.com/tomicaracholi/"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://github.com/1tomas" target="blank"><i class="fa-brands fa-github"></i></a>
-        <h3>Contactame</h3>
-    </footer>
+<footer id="contact">
+    <div class="footer-links">
+        <a href="mailto:tomascaracholi@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.instagram.com/tomicaracholi/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/1tomas" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/tomas-caraccioli-a77218271" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <h3>Contactame</h3>
+</footer>
 
     <script src="js/index.js"></script>
 </body>

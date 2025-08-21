@@ -1,3 +1,12 @@
+if (window.location.pathname.endsWith('index.html')) {
+    window.history.replaceState({}, '', '/');
+}
+
+if (window.location.pathname.endsWith('ingles.html')) {
+    window.history.replaceState({}, '', '/');
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
     let checkbox = document.querySelector('input[type="checkbox"]');
     let currentLanguage = localStorage.getItem('language');
@@ -30,4 +39,5 @@ const navMenu = document.querySelector(".nav_menu");
 function toggleNavigation() {
     navMenu.classList.toggle("nav_menu_visible");
 }
+
 
