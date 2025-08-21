@@ -19,6 +19,7 @@ h1{
 h2{
     font-size: 30px;
 }
+
 p, a, li{
     font-size: 20px;
 }
@@ -45,12 +46,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    margin: 0;
+    margin-bottom:0;
+    padding: 5px;
     display: flex;
     align-items: center;
     background: #00000096;
-    z-index: 1000;
-    transition: transform 0.3s ease;
+    box-shadow: #f8887e 0px 2px 40px 0px;
+
 }
 
 #logo{
